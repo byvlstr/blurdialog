@@ -1,10 +1,13 @@
 package com.vlstr.blurdialogexample;
 
 import android.graphics.drawable.Drawable;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
+import android.widget.Button;
 
 import com.vlstr.blurdialog.BlurDialog;
 
@@ -17,15 +20,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final float radius = 20;
-        final View decorView = getWindow().getDecorView();
-        final ViewGroup rootView = (ViewGroup) decorView.findViewById(android.R.id.content);
-        final Drawable windowBackground = decorView.getBackground();
+        final BlurDialog blurDialog = (BlurDialog) findViewById(R.id.blurView);
 
-        BlurDialog blurDialog = (BlurDialog) findViewById(R.id.blurView);
-        blurDialog.setupWith(rootView)
-                .windowBackground(windowBackground)
-                .blurAlgorithm(new RenderScriptBlur(this))
-                .blurRadius(radius);
+        Button button = (Button) findViewById(R.id.btn_show);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                blurDialog.create(getWindow().getDecorView(), 20);
+                blurDialog.show();
+            }
+        });
     }
 }

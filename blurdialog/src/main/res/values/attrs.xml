@@ -5,6 +5,10 @@
             <attr name="blurDialogTitle" format="string" />
             <attr name="blurDialogTitleSize" format="dimension"/>
             <attr name="blurDialogCornerRadius" format="dimension"/>
-            <attr name="blurDialogElevation" format="dimension"/>
+            <attr name="blurDialogDuration" format="enum">
+                <enum name="length_infinite" value="-1"/>
+                <enum name="length_short" value="0"/>
+                <enum name="length_long" value="1"/>
+            </attr>
        </declare-styleable>
 </resources>
