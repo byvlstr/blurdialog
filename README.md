@@ -14,16 +14,20 @@ Blur Dialog is an Android dialog-like view providing a blur effect as background
 Add this XML snippet to your layout.
 
 ```xml
-    <com.vlstr.blurdialog.BlurDialog
+
+
+<com.vlstr.blurdialog.BlurDialog
         android:layout_width="200dp"
-        android:layout_height="200dp"
+
+android:layout_height="200dp"
         android:id="@+id/blurView"
         android:elevation="24dp"
         app:blurOverlayColor="@color/colorOverlay"
         app:blurDialogIcon="@mipmap/ic_launcher"
         app:blurDialogTitle="Hello World!"
         app:blurDialogDuration="length_short"
-        android:layout_gravity="center"
+
+android:layout_gravity="center"
         android:visibility="invisible">
 
     </com.vlstr.blurdialog.BlurDialog>
@@ -42,6 +46,11 @@ blurDialog.show();
 
 Note: Currently, it is best to have one and only one BlurDialog in your Activity. Using 'invisible' in the XML and then hide() the BlurDialog (automatically done if duration is set, otherwise use the public method). 
 
+# Compatibility
+
+This Android library is currently only supported by devices with API > 17.
+
+Also, [BlurView can be used only in a hardware-accelerated window. Otherwise, blur will not be drawn. It will fallback to a regular FrameLayout drawing process.](https://github.com/Dimezis/BlurView). Performance is good, but highly depends on your layout and usage.
 
 # Customisation
 
@@ -51,8 +60,12 @@ Note: Currently, it is best to have one and only one BlurDialog in your Activity
 * Corner Radius
 * Duration: You have the choice between SHORT (2s) and LONG (3.5s). If you wish to have an infinite BlurDialog and handle hiding or dismissing yourself, you can do so too.
 
+* Blur color overlay: Provide the colour being used as the dialog's overlay. Default is a transparent white.
+* Blur radius: Range [1-25] - The lower it is, the more you will see the BlurDialog's background.
+
 Note: BlurDialog is NOT extending [AlertDialog](https://developer.android.com/reference/android/app/AlertDialog.html), hence clicking outside the box is currently NOT hiding the BlurDialog. Of course, you can implement this in dispatchTouchEvent() [easily](http://stackoverflow.com/questions/36889141/hide-keyboard-in-fragment-on-outside-click) and then call BlurDialog's hide() or dismiss() method. 
 
+{
 
 # Gradle
 
