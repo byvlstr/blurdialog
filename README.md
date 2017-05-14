@@ -1,6 +1,6 @@
 # Blur Dialog
 
-<img src="docs/static/logo.png" width=150 align=right>
+<img src="https://github.com/byvlstr/blurdialog/blob/master/assets/BlurDialog.png" width=150 align=right>
 
 Blur Dialog is an Android dialog-like view providing a blur effect as background, a title and an icon
 
@@ -43,7 +43,6 @@ final BlurDialog blurDialog = (BlurDialog) findViewById(R.id.blurView);
 blurDialog.create(getWindow().getDecorView(), 20);
 blurDialog.show();
 ```
-
 Note: Currently, it is best to have one and only one BlurDialog in your Activity. Using 'invisible' in the XML and then hide() the BlurDialog (automatically done if duration is set, otherwise use the public method). 
 
 # Compatibility
@@ -65,21 +64,21 @@ Also, [BlurView can be used only in a hardware-accelerated window. Otherwise, bl
 
 Note: BlurDialog is NOT extending [AlertDialog](https://developer.android.com/reference/android/app/AlertDialog.html), hence clicking outside the box is currently NOT hiding the BlurDialog. Of course, you can implement this in dispatchTouchEvent() [easily](http://stackoverflow.com/questions/36889141/hide-keyboard-in-fragment-on-outside-click) and then call BlurDialog's hide() or dismiss() method. 
 
-{
+
 
 # Gradle
 
 ```groovy
 dependencies {
-    compile 'com.vlstr.blurdialog:blurdialog:1.0.8'
+    compile 'com.vlstr.blurdialog:blurdialog:1.0.0'
 }
 ```
 
 
 # Examples
 
-Coming soon...
-
+[![screen](https://github.com/byvlstr/blurdialog/blob/master/assets/travel.png)
+[![screen](https://github.com/byvlstr/blurdialog/blob/master/assets/game.png)
 
 # Logs
 
