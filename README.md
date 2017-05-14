@@ -1,4 +1,4 @@
-        # Blur Dialog
+# Blur Dialog
 
 <img src="https://github.com/byvlstr/blurdialog/blob/master/assets/BlurDialog.png" width=150 align=right>
 
