@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+       <declare-styleable name="BlurDialog">
+            <attr name="blurDialogIcon" format="reference" />
+            <attr name="blurDialogTitle" format="string" />
+            <attr name="blurDialogTitleSize" format="dimension"/>
+            <attr name="blurDialogCornerRadius" format="dimension"/>
+            <attr name="blurDialogElevation" format="dimension"/>
+       </declare-styleable>
+</resources>

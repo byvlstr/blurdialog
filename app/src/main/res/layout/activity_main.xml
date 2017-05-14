@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lisboa"
+    tools:context="com.vlstr.blurdialogexample.MainActivity">
+
+    <com.vlstr.blurdialog.BlurDialog
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/blurView"
+        app:blurOverlayColor="@color/colorOverlay"
+        app:blurDialogIcon="@mipmap/ic_launcher"
+        app:blurDialogTitle="Title"
+        app:blurDialogElevation="24dp"
+        android:layout_gravity="center">
+
+    </com.vlstr.blurdialog.BlurDialog>
+
+
+</android.support.design.widget.CoordinatorLayout>

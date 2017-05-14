@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="default_blur_dialog_title_size">10sp</dimen>
+    <dimen name="default_blur_dialog_corner_radius">15dp</dimen>
+</resources>
