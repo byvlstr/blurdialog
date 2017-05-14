@@ -5,7 +5,7 @@
 Blur Dialog is an Android dialog-like view providing a blur effect as background, a title and an icon
 
 * **Innovative:** Blur Dialog is an innovative way to show in-app alerts, notifications or reward messages.
-* **Great UI:** A simple UI. One title. One beautiful icon. On an ambitious and elegant blurred background. 
+* **Great UI:** A simple UI. One title. One beautiful icon. One ambitious and elegant blurred background. 
 * **Inspired by:** 3 inspirations: iOS's volume dialog, XCode's "Build successful" dialog and Microsoft's new Fluent Design System.
 * **Many thanks to:** Dmitry Saviuk who made [BlurView](https://github.com/Dimezis/BlurView) so that I didn't have to do it again. ^^
 
