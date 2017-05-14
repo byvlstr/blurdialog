@@ -46,7 +46,6 @@ blurDialog.show();
 Note: Currently, it is best to have one and only one BlurDialog in your Activity. Using 'invisible' in the XML and then hide() the BlurDialog (automatically done if duration is set, otherwise use the public method). 
 
 # Compatibility
-
 This Android library is currently only supported by devices with API > 17.
 
 Also, [BlurView can be used only in a hardware-accelerated window. Otherwise, blur will not be drawn. It will fallback to a regular FrameLayout drawing process.](https://github.com/Dimezis/BlurView). Performance is good, but highly depends on your layout and usage.
@@ -77,8 +76,8 @@ dependencies {
 
 # Examples
 
-[![screen](https://github.com/byvlstr/blurdialog/blob/master/assets/travel.png)
-[![screen](https://github.com/byvlstr/blurdialog/blob/master/assets/game.png)
+![screen](https://github.com/byvlstr/blurdialog/blob/master/assets/travel.png)
+![screen](https://github.com/byvlstr/blurdialog/blob/master/assets/game.png)
 
 # Logs
 
