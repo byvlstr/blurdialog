@@ -65,6 +65,8 @@ Note: BlurDialog is NOT extending [AlertDialog](https://developer.android.com/re
 
 # Gradle
 
+Not yet live...
+
 ```groovy
 dependencies {
     compile 'com.vlstr.blurdialog:blurdialog:1.0.0'
