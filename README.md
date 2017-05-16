@@ -5,7 +5,7 @@
 Blur Dialog is an Android dialog-like view providing a blur effect as background, a title and an icon
 
 * **Innovative:** Blur Dialog is an innovative way to show in-app alerts, notifications or reward messages.
-* **Great UI:** A simple UI. One title. One beautiful icon. On an ambitious and elegant blurred background. 
+* **Great UI:** A simple UI. One title. One beautiful icon. One ambitious and elegant blurred background. 
 * **Inspired by:** 3 inspirations: iOS's volume dialog, XCode's "Build successful" dialog and Microsoft's new Fluent Design System.
 * **Many thanks to:** Dmitry Saviuk who made [BlurView](https://github.com/Dimezis/BlurView) so that I didn't have to do it again. ^^
 
@@ -18,19 +18,17 @@ Add this XML snippet to your layout.
 
 <com.vlstr.blurdialog.BlurDialog
         android:layout_width="200dp"
-
-android:layout_height="200dp"
+        android:layout_height="200dp"
         android:id="@+id/blurView"
         android:elevation="24dp"
         app:blurOverlayColor="@color/colorOverlay"
         app:blurDialogIcon="@mipmap/ic_launcher"
         app:blurDialogTitle="Hello World!"
         app:blurDialogDuration="length_short"
-
-android:layout_gravity="center"
+        android:layout_gravity="center"
         android:visibility="invisible">
 
-    </com.vlstr.blurdialog.BlurDialog>
+</com.vlstr.blurdialog.BlurDialog>
 ```
 
 And create and show the BlurDialog this way:
@@ -67,10 +65,22 @@ Note: BlurDialog is NOT extending [AlertDialog](https://developer.android.com/re
 
 # Gradle
 
+
 ```groovy
 dependencies {
-    compile 'com.vlstr.blurdialog:blurdialog:1.0.0'
+    compile 'com.vlstr:blurdialog:1.0.0'
 }
+```
+
+For Maven:
+
+```xml
+<dependency>
+  <groupId>com.vlstr</groupId>
+  <artifactId>blurdialog</artifactId>
+  <version>1.0.0</version>
+  <type>pom</type>
+</dependency>
 ```
 
 
