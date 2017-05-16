@@ -31,3 +31,32 @@ dependencies {
 
     testCompile 'junit:junit:4.12'
 }
+
+ext {
+    bintrayRepo = 'maven' //the maven repo name (created on bintray)
+    bintrayName = 'blurdialog' //the name you want to give at your project on bintray
+    orgName = 'vlstr' //your user name
+
+    publishedGroupId = 'com.vlstr' //aaaa : the librairy group
+    artifact = 'blurdialog' //BBBB : the library name
+    libraryVersion = "1.0.0" //the librairy version
+
+    //the library will be : aaaa:BBBB:version
+
+    libraryName = 'BlurDialog'
+    libraryDescription = 'Use a blurred dialog to show rewards or notifications'
+
+    siteUrl = 'https://github.com/byvlstr/blurdialog'
+    gitUrl = 'https://github.com/byvlstr/blurdialog.git'
+
+    developerId = 'vlstr'
+    developerName = 'Valentin Lungenstrass'
+    developerEmail = 'contact@vlstr.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
+apply from: rootProject.file('gradle/install-v1.gradle')
+apply from: rootProject.file('gradle/bintray-android-v1.gradle')
