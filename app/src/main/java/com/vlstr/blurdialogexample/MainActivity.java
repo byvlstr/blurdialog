@@ -1,17 +1,11 @@
 package com.vlstr.blurdialogexample;
 
-import android.graphics.drawable.Drawable;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.view.ViewGroup;
-import android.view.WindowManager;
 import android.widget.Button;
 
 import com.vlstr.blurdialog.BlurDialog;
-
-import eightbitlab.com.blurview.RenderScriptBlur;
 
 public class MainActivity extends AppCompatActivity {
 
